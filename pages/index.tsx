@@ -170,7 +170,8 @@ const Home: NextPage = () => {
                     <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                       <span className="block xl:inline">
                         Empower your projects with{' '}
-                      </span>{' '}
+                      </span>
+                      <br />
                       <span className="block text-green-600 xl:inline">
                         Modern High Tech.
                       </span>
