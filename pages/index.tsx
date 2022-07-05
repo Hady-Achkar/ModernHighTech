@@ -1,23 +1,23 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Script from 'next/script';
-import React, { Fragment, useState } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon, CameraIcon } from '@heroicons/react/outline';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Script from "next/script";
+import React, { Fragment, useState } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { MenuIcon, XIcon, CameraIcon } from "@heroicons/react/outline";
 const Home: NextPage = () => {
   const navigation = [
-    { name: 'Services', href: '#wind' },
-    { name: 'About us', href: '#about' },
-    { name: 'Get in touch', href: '#contact' },
+    { name: "Services", href: "#wind" },
+    { name: "About us", href: "#about" },
+    { name: "Get in touch", href: "#contact" },
   ];
 
   const [contactData, setContactData] = useState({
-    fname: '',
-    lname: '',
-    email: '',
-    message: '',
-    phone: '',
-    subject: '',
+    fname: "",
+    lname: "",
+    email: "",
+    message: "",
+    phone: "",
+    subject: "",
   });
 
   const handleChange = (
@@ -27,12 +27,12 @@ const Home: NextPage = () => {
   };
 
   const images = [
-    '/img1.png',
-    '/img2.png',
-    '/img3.png',
-    '/img4.png',
-    '/img5.png',
-    '/img6.png',
+    "/img1.png",
+    "/img2.png",
+    "/img3.png",
+    "/img4.png",
+    "/img5.png",
+    "/img6.png",
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
                   <div className="sm:text-center lg:text-left">
                     <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                       <span className="block xl:inline">
-                        Empower your projects with{' '}
+                        Empower your projects with{" "}
                       </span>
                       <br />
                       <span className="block text-green-600 xl:inline">
@@ -230,32 +230,25 @@ const Home: NextPage = () => {
                   <div>
                     <li>
                       <span className="font-bold text-green-800">
-                        Excess solar and wind energy can run electrolyzers{' '}
+                        Excess solar and wind energy can run electrolyzers{" "}
                       </span>
                       that convert water into hydrogen, which is distributed in
                       pipelines and converted back into electricity when needed.
                     </li>
-                  </div>{' '}
+                  </div>{" "}
                   <div>
                     <li>
                       <span className="font-bold text-green-800">
-                        Plans to fully power nations with renewable
+                        Hydrogen can be stored in tanks and underground caverns{" "}
                       </span>
                     </li>
                     <li>
                       <span className="">
-                        Electricity will not succeed unless countries
-                        reconfigure all their energy systems, including fuels.
+                        forming a network that can energize industry and back up
+                        electric grids.
                       </span>
                     </li>
                   </div>
-                  <li>
-                    <span className="font-bold">
-                      Hydrogen can be stored in tanks and underground caverns{' '}
-                    </span>
-                    forming a network that can energize industry and back up
-                    electric grids.
-                  </li>
                 </ul>
               </div>
             </div>
@@ -466,6 +459,94 @@ const Home: NextPage = () => {
           </div>
         </section>
 
+        <section id="solar">
+          <div className="bg-white">
+            <div className="bg-white overflow-hidden">
+              <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
+                <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                  <div>
+                    <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-green-600 sm:text-4xl">
+                      Hydrogen Power Storage
+                    </h3>
+                  </div>
+                </div>
+                <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                  <div className="relative lg:row-start-1 lg:col-start-2">
+                    <svg
+                      className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                      width={404}
+                      height={384}
+                      fill="none"
+                      viewBox="0 0 404 384"
+                      aria-hidden="true"
+                    >
+                      <defs>
+                        <pattern
+                          id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                          x={0}
+                          y={0}
+                          width={20}
+                          height={20}
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            x={0}
+                            y={0}
+                            width={4}
+                            height={4}
+                            className="text-gray-200"
+                            fill="currentColor"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width={404}
+                        height={384}
+                        fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+                      />
+                    </svg>
+                    <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+                      <figure>
+                        <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                          <img
+                            className="rounded-lg shadow-lg object-cover object-center"
+                            src="/h1.jpg"
+                            alt="Whitney leaning against a railing on a downtown street"
+                            width={1184}
+                            height={1376}
+                          />
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <div className="mt-8 lg:mt-0">
+                    <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                      <p className="text-lg text-gray-500">
+                        Capture the energy produced at one time for use at a
+                        later time to reduce imbalances between energy demand
+                        and energy production
+                      </p>
+                    </div>
+                    <div className="mt-5 prose prose-indigo text-lg space-y-4 text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                      <p>
+                        Consult us to get more information regarding the
+                        feasibility of installing Hydrogen Storages in your
+                        desired project.
+                      </p>
+                      <p className="underline">
+                        We provide all the services you need to implement
+                        Hydrogen Energy Storage Ecosystem including cosultation,
+                        buying, and installing the systems.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="pre">
           <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
             <div className="relative max-w-lg mx-auto   lg:max-w-7xl ">
@@ -638,7 +719,7 @@ const Home: NextPage = () => {
                             rows={4}
                             className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-green-500 focus:border-green-500 border border-gray-300 rounded-md"
                             aria-describedby="message-max"
-                            defaultValue={''}
+                            defaultValue={""}
                           />
                         </div>
                       </div>
